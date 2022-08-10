@@ -232,7 +232,7 @@ section {
         padding-right: 0;
       }
     }
-    p {
+    .self-intro {
       text-align: justify;
       padding-top: 1.8rem;
       padding-right: 22rem;
@@ -267,10 +267,17 @@ section {
   padding-bottom: 5rem;
   .left-about {
     margin: 0;
-    p {
-      line-height: 1.5rem;
-      padding: 1rem;
-      color: var(--clr-grey-1);
+    div {
+      text-align: center;
+      p {
+        line-height: 1.5rem;
+        padding: 1rem;
+        color: var(--clr-grey-1);
+        text-align: justify;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        word-spacing: -0.05rem;
+      }
     }
   }
   .right-about {

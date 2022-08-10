@@ -243,7 +243,7 @@ section {
   font-size: 2.2rem;
   padding-right: 0;
 }
-.header-content .right-header p {
+.header-content .right-header .self-intro {
   text-align: justify;
   padding-top: 1.8rem;
   padding-right: 22rem;
@@ -252,12 +252,12 @@ section {
   margin: 1.5rem 0;
   line-height: 2rem;
 }
-.header-content .right-header p .name {
+.header-content .right-header .self-intro .name {
   color: var(--clr-secondary);
   transition: all 0.3s ease-in-out;
   font-weight: 700;
 }
-.header-content .right-header p .nus {
+.header-content .right-header .self-intro .nus {
   color: var(--clr-nus);
   transition: all 0.3s ease-in-out;
   font-weight: 700;
@@ -277,10 +277,18 @@ section {
 .about-container .left-about {
   margin: 0;
 }
-.about-container .left-about p {
+.about-container .left-about div {
+  text-align: center;
+}
+.about-container .left-about div p {
   line-height: 1.5rem;
   padding: 1rem;
   color: var(--clr-grey-1);
+  text-align: justify;
+  -ms-hyphens: auto;
+      hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05rem;
 }
 .about-container .right-about {
   display: grid;
@@ -860,119 +868,9 @@ section {
   color: var(--clr-primary);
 }
 
-@media screen and (max-width: 1432px) {
-  .section {
-    padding: 5rem;
-  }
-  .blogs {
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 6rem;
-  }
-  .contact-content {
-    flex-direction: column;
-  }
-  .contact-content .left-contact {
-    font-size: 1rem;
-  }
-  .contact-content .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content .right-contact .form-submit-btn {
-    padding-bottom: 4.5rem;
-  }
-}
-@media screen and (max-width: 850px) {
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 2rem;
-  }
-}
 @media screen and (max-width: 600px) {
-  header {
-    padding: 0;
-  }
-  header .left-header .image {
-    display: none;
-  }
-  header .right-header {
-    padding: 2rem !important;
-    grid-row: 1;
-    width: 90%;
-    margin: 0 auto;
-  }
-  header .right-header .name {
-    font-size: 2.5rem !important;
-  }
-  header .right-header .self-intro {
-    padding: 0;
-  }
-  header .right-header .home-btn-container {
-    padding-left: 15rem;
-    padding-right: 0;
-    padding-bottom: 5rem;
-    justify-content: center;
-  }
-  .theme-btn {
-    width: 50px;
-    height: 50px;
-  }
-  .header-content {
-    grid-template-columns: 1fr;
-    padding-bottom: 6rem;
-  }
-  .about-container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .about-container .right-about {
-    grid-template-columns: repeat(1, 1fr);
-    padding-top: 2.5rem;
-  }
-  .about-container .left-about {
-    padding-right: 0;
-  }
-  .about-container .left-about p {
-    padding-left: 0;
-  }
-  .timeline {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-  }
-  .about-stats .progress-bars {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .blogs {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-  }
-  .portfolio {
-    grid-template-columns: repeat(1, 1fr);
-    padding-bottom: 6rem;
-  }
-  .contact-content {
-    flex-direction: column;
-  }
-  .contact-content .left-contact {
-    font-size: 1rem;
-  }
-  .contact-content .right-contact {
-    margin-left: 0;
-    margin-top: 2.5rem;
-  }
-  .contact-content .right-contact .form-submit-btn {
-    padding-bottom: 4.5rem;
-  }
   .section {
     padding: 2rem 2.5rem;
-  }
-  .main-title h2 {
-    font-size: 2rem;
-  }
-  .main-title h2 span {
-    font-size: 2rem;
-  }
-  .main-title h2 .bg-text {
-    font-size: 2.5rem;
   }
   .controls {
     top: auto;
@@ -985,6 +883,96 @@ section {
     background-color: var(--clr-grey-5);
   }
   .controls .control {
-    margin: 1rem 0.3rem;
+    margin: 0.4rem 0.3rem;
+  }
+  header {
+    padding: 0;
+  }
+  header .header-content {
+    display: block;
+  }
+  header .header-content .left-header {
+    display: block;
+  }
+  header .header-content .left-header .shape-1 {
+    display: none;
+  }
+  header .header-content .left-header .image {
+    margin: 0 auto;
+    height: 80%;
+    width: 38%;
+  }
+  header .header-content .right-header {
+    display: block;
+  }
+  header .header-content .right-header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  header .header-content .right-header h1 .description {
+    font-size: 2rem;
+  }
+  header .header-content .right-header .self-intro {
+    padding: 0;
+    padding-top: 2.5%;
+    margin: 1rem;
+  }
+  header .header-content .right-header .home-btn-container {
+    padding-left: 15rem;
+    padding-right: 0;
+    padding-bottom: 5rem;
+    justify-content: center;
+  }
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .about-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+  .about-container .left-about p {
+    padding-left: 0;
+  }
+  .about-container .btn-container {
+    margin-bottom: 1.5rem;
+  }
+  .about-container .right-about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .programming-lang .proficiency {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .figures {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .about-stats .skills .IDE .figures {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .course {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 6rem;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-content .left-contact {
+    font-size: 1rem;
+  }
+  .contact-content .right-contact {
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+  .contact-content .right-contact .contact-form {
+    margin-bottom: 5rem;
   }
 }/*# sourceMappingURL=styles.css.map */
