@@ -77,3 +77,7 @@ document
       "https://bytedance.sg.feishu.cn/file/boxlg0toRhl1Y9QdXzKdx9nPlec"
     );
   });
+document.getElementById("contact-form").addEventListener("submit", function () {
+  window.open("https://formsubmit.co/el/ximito");
+  this.reset();
+});
