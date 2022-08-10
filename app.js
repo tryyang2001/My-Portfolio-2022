@@ -78,6 +78,5 @@ document
     );
   });
 document.getElementById("contact-form").addEventListener("submit", function () {
-  window.open("https://formsubmit.co/el/ximito");
   this.reset();
 });
