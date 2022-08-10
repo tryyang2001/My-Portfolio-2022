@@ -77,6 +77,9 @@ document
       "https://bytedance.sg.feishu.cn/file/boxlg0toRhl1Y9QdXzKdx9nPlec"
     );
   });
-document.getElementById("contact-form").addEventListener("submit", function () {
-  this.reset();
-});
+
+function submitForm() {
+  document.getElementById("contact-form").submit();
+  document.getElementById("contact-form").reset();
+  return false;
+}

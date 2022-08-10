@@ -681,7 +681,7 @@
             </div>
           </div>
           <div class="right-contact">
-            <form target="_blank" action="https://formsubmit.co/8bb7130b6cb30c7881946e91f6cd5b0e" method="post" class="contact-form" id="contact-form">
+            <form action="https://formsubmit.co/8bb7130b6cb30c7881946e91f6cd5b0e" method="post" class="contact-form" id="contact-form">
               <div class="input-control">
                 <input type="text" name="name" id="name" required placeholder="Your name" />
               </div>
@@ -694,7 +694,8 @@
               <div class="input-control">
                 <textarea name="message" id="message" cols="15" rows="8" placeholder="Message here..."></textarea>
               </div>
-              <button type="submit" class="form-submit-btn main-btn">
+              <input type="hidden" name="_next" value="https://tryyang2001.github.io/My-Portfolio-2022/">
+              <button type="button" class="form-submit-btn main-btn" onclick="submitForm()">
                 <span class="btn-text">Send</span>
                 <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
               </button>
