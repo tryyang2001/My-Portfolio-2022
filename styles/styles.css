@@ -868,7 +868,7 @@ section {
   color: var(--clr-primary);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
   .section {
     padding: 2rem 2.5rem;
   }
@@ -942,15 +942,6 @@ section {
   .about-container .right-about {
     grid-template-columns: repeat(1, 1fr);
   }
-  .about-stats .skills .programming-lang .proficiency {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .about-stats .skills .figures {
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .about-stats .skills .IDE .figures {
-    grid-template-columns: repeat(5, 1fr);
-  }
   .course {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -974,5 +965,76 @@ section {
   }
   .contact-content .right-contact .contact-form {
     margin-bottom: 5rem;
+  }
+}
+/*media for skills icon */
+@media screen and (max-width: 1497px) {
+  .about-stats .skills .programming-lang .proficiency {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .programming-lang .proficiency .excellent {
+    border-right: none;
+  }
+  .about-stats .skills .figures {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .about-stats .skills .IDE .figures {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+@media screen and (max-width: 1200px) {
+  .about-stats .skills .programming-lang .proficiency {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .programming-lang .proficiency .excellent {
+    border-right: none;
+  }
+  .about-stats .skills .figures {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .about-stats .skills .IDE .figures {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 571px) {
+  .about-stats .skills .programming-lang .proficiency {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .programming-lang .proficiency .excellent {
+    border-right: none;
+  }
+  .about-stats .skills .figures {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .about-stats .skills .IDE .figures {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 407px) {
+  .about-stats .skills .programming-lang .proficiency {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .programming-lang .proficiency .excellent {
+    border-right: none;
+  }
+  .about-stats .skills .figures {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-stats .skills .IDE .figures {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 280px) {
+  .about-stats .skills .programming-lang .proficiency {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .programming-lang .proficiency .excellent {
+    border-right: none;
+  }
+  .about-stats .skills .figures {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .about-stats .skills .IDE .figures {
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=styles.css.map */

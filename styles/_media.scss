@@ -1,4 +1,8 @@
-@media screen and (max-width: 600px) {
+//571px is the first to accept gtc 5 => min-width
+//407px is the first to accept gtc 3
+//280px is the first to accept gtc 2
+
+@media screen and (max-width: 1200px) {
   .section {
     padding: 2rem 2.5rem;
   }
@@ -77,24 +81,6 @@
     }
   }
 
-  .about-stats {
-    .skills {
-      .programming-lang {
-        .proficiency {
-          grid-template-columns: repeat(1, 1fr);
-        }
-      }
-      .figures {
-        grid-template-columns: repeat(5, 1fr);
-      }
-      .IDE {
-        .figures {
-          grid-template-columns: repeat(5, 1fr);
-        }
-      }
-    }
-  }
-
   .course {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -119,6 +105,122 @@
       margin-top: 2.5rem;
       .contact-form {
         margin-bottom: 5rem;
+      }
+    }
+  }
+}
+
+/*media for skills icon */
+@media screen and (max-width: 1497px) {
+  .about-stats {
+    .skills {
+      .programming-lang {
+        .proficiency {
+          grid-template-columns: repeat(1, 1fr);
+          .excellent {
+            border-right: none;
+          }
+        }
+      }
+      .figures {
+        grid-template-columns: repeat(7, 1fr);
+      }
+      .IDE {
+        .figures {
+          grid-template-columns: repeat(7, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-stats {
+    .skills {
+      .programming-lang {
+        .proficiency {
+          grid-template-columns: repeat(1, 1fr);
+          .excellent {
+            border-right: none;
+          }
+        }
+      }
+      .figures {
+        grid-template-columns: repeat(5, 1fr);
+      }
+      .IDE {
+        .figures {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 571px) {
+  .about-stats {
+    .skills {
+      .programming-lang {
+        .proficiency {
+          grid-template-columns: repeat(1, 1fr);
+          .excellent {
+            border-right: none;
+          }
+        }
+      }
+      .figures {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .IDE {
+        .figures {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 407px) {
+  .about-stats {
+    .skills {
+      .programming-lang {
+        .proficiency {
+          grid-template-columns: repeat(1, 1fr);
+          .excellent {
+            border-right: none;
+          }
+        }
+      }
+      .figures {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .IDE {
+        .figures {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .about-stats {
+    .skills {
+      .programming-lang {
+        .proficiency {
+          grid-template-columns: repeat(1, 1fr);
+          .excellent {
+            border-right: none;
+          }
+        }
+      }
+      .figures {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .IDE {
+        .figures {
+          grid-template-columns: repeat(1, 1fr);
+        }
       }
     }
   }
