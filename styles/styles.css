@@ -28,7 +28,7 @@
 
 .light-mode {
   --clr-primary: #ececec;
-  --clr-secondary: #a88a20;
+  --clr-secondary: #ef7c00;
   --clr-white: #454e56;
   --clr-black: #000000;
   --clr-grey-0: #f8f8f8;
@@ -39,7 +39,6 @@
   --clr-grey-5: #f8f8f8;
   --clr-grey-6: #12181b;
   --clr-bg-icon: #fff;
-  --clr-nus: #003d7c;
   --border-skill: 1px solid black;
 }
 
@@ -551,12 +550,12 @@ section {
 }
 .portfolios .portfolio-item .hover-items h3 {
   font-size: 1.5rem;
-  color: var(--clr-white);
+  color: white;
   margin-bottom: 1.5rem;
 }
 .portfolios .portfolio-item .hover-items button {
   margin-top: 1.8rem;
-  background-color: var(--clr-nus);
+  background-color: #ef7c00;
 }
 
 .portfolio-item:hover .hover-items {
@@ -949,7 +948,6 @@ section {
     grid-template-columns: repeat(1, 1fr);
   }
   .portfolios {
-    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
   .blogs {
@@ -984,6 +982,9 @@ section {
   .about-stats .skills .IDE .figures {
     grid-template-columns: repeat(7, 1fr);
   }
+  .portfolios {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media screen and (max-width: 1200px) {
   .about-stats .skills .programming-lang .proficiency {
@@ -997,6 +998,11 @@ section {
   }
   .about-stats .skills .IDE .figures {
     grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 571px) {

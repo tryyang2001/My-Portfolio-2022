@@ -92,7 +92,6 @@
   }
 
   .portfolios {
-    grid-template-columns: repeat(1, 1fr);
     padding-bottom: 6rem;
   }
 
@@ -138,6 +137,9 @@
       }
     }
   }
+  .portfolios {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -160,6 +162,12 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

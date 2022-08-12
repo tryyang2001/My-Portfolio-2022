@@ -28,7 +28,7 @@
 
 .light-mode {
   --clr-primary: #ececec;
-  --clr-secondary: #a88a20;
+  --clr-secondary: #ef7c00;
   --clr-white: #454e56;
   --clr-black: #000000;
   --clr-grey-0: #f8f8f8;
@@ -39,7 +39,6 @@
   --clr-grey-5: #f8f8f8;
   --clr-grey-6: #12181b;
   --clr-bg-icon: #fff;
-  --clr-nus: #003d7c;
   --border-skill: 1px solid black;
 }
 
@@ -544,12 +543,12 @@ section {
       transition: all 0.4s ease-in-out;
       h3 {
         font-size: 1.5rem;
-        color: var(--clr-white);
+        color: white;
         margin-bottom: 1.5rem;
       }
       button {
         margin-top: 1.8rem;
-        background-color: var(--clr-nus);
+        background-color: #ef7c00;
       }
     }
   }
