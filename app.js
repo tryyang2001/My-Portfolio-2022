@@ -77,6 +77,18 @@ document
       "https://bytedance.sg.feishu.cn/file/boxlg0toRhl1Y9QdXzKdx9nPlec"
     );
   });
+document
+  .getElementById("ieee-cert-link")
+  .addEventListener("click", function () {
+    window.open("https://nushkn.org/members/");
+  });
+document
+  .getElementById("web-design-cert-link")
+  .addEventListener("click", function () {
+    window.open(
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/FZ62AUWKL9JE"
+    );
+  });
 
 function submitForm() {
   document.getElementById("contact-form").submit();
